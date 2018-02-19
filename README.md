@@ -6,15 +6,15 @@ Just a quick example of a systemd service file for a ruby application that I was
 
 [Unit]
 
-Description=<DESCRIPTION>
+Description=</DESCRIPTION/>
 
 [Service]
 
 Type=forking
 
-User=<USER>
+User=</USER/>
 
-Group=<GROUP>
+Group=</GROUP/>
 
 WorkingDirectory=<PATH/TO/FILES>
 
