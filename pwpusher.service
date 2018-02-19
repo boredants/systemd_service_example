@@ -1,0 +1,13 @@
+[Unit]
+Description=PasswordPusher Service
+
+[Service]
+Type=forking
+User=roanoke
+Group=roanoke
+WorkingDirectory=/home/roanoke/PasswordPusher
+ExecStart=/bin/bash -lc 'foreman start internalweb &'
+ExecStop=/bin/bash -lc 'pkill foreman'
+
+[Install]
+WantedBy=multi-user.target
